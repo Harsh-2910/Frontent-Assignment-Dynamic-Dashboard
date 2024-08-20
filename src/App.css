@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.navContainer{
+  background-color: white;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navElements{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navElements h1{
+  font-size: larger;
+  font-weight: 600;
+}
+
+.navElements input{
+  padding-inline: 8px;
+  border-radius: 0.5rem;
+  border-width: thin;
+  height: 2rem;
+}
+
+.dashboardContainer{
+  background-color: rgb(243, 243, 248);
+}
+
+.widgetsContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 600px){
+  .widgetsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .widget{
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.categoryContainer{
+  padding: 1rem;
+}
+
+.categoryContainer h2{
+  font-size: large;
+  font-weight: 600;
+}
+
+.widget{
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  max-width: 15rem;
+  min-width: 12rem;
+}
+
+.widget h3{
+  font-size: medium;
+  font-weight: 600;
+  margin: 0
+}
+
+.widget p{
+  font-size: small;
+  font-weight: 400;
+}
+
+.widget img{
+  width: 10rem;
+  margin-top: 1rem;
+}
+
+.widget button{
+  padding: 0.5rem;
+  border-width: thin;
+  border-radius: 0.5rem;
+  border: blue;
+  font-size: small;
+  font-weight: 600;
+  color: white;
+  background-image: linear-gradient(rgb(12, 12, 149),rgb(17, 17, 197));
+}
+
+.addWidgetForm{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1rem;
+  background-color: white;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  max-width: 15rem;
+}
+
+.addWidgetForm input{
+  padding: 0.5rem;
+  border-width: thin;
+  border-radius: 0.5rem;
+}
+
+.addWidgetForm button{
+  padding: 0.5rem;
+  border-width: thin;
+  border-radius: 0.5rem;
+  border: blue;
+  font-size: small;
+  font-weight: 600;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-image: linear-gradient(rgb(12, 12, 149),rgb(17, 17, 197));
 }
